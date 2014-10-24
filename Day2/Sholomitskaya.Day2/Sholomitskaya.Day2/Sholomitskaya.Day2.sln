@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number", "pRepresentationOfNumber\Number.csproj", "{1099AFEE-66E4-4A6E-8665-36CDA8F03D18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuclidsAlgorithm", "Euclid'sAlgorithm\EuclidsAlgorithm.csproj", "{73BEBD69-6EA2-42E5-AF17-DF624BC5965E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberTest", "pRepresentationOfNumberTest\NumberTest.csproj", "{58D0D796-E17B-4DDD-B3EE-DCEA3C3EDE6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuclidsAlgorithmTest", "EuclidsAlgorithmTest\EuclidsAlgorithmTest.csproj", "{08FEE295-13B2-4BD0-95A6-4F98EEC614C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1099AFEE-66E4-4A6E-8665-36CDA8F03D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1099AFEE-66E4-4A6E-8665-36CDA8F03D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1099AFEE-66E4-4A6E-8665-36CDA8F03D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1099AFEE-66E4-4A6E-8665-36CDA8F03D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73BEBD69-6EA2-42E5-AF17-DF624BC5965E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BEBD69-6EA2-42E5-AF17-DF624BC5965E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BEBD69-6EA2-42E5-AF17-DF624BC5965E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BEBD69-6EA2-42E5-AF17-DF624BC5965E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D0D796-E17B-4DDD-B3EE-DCEA3C3EDE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D0D796-E17B-4DDD-B3EE-DCEA3C3EDE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D0D796-E17B-4DDD-B3EE-DCEA3C3EDE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D0D796-E17B-4DDD-B3EE-DCEA3C3EDE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FEE295-13B2-4BD0-95A6-4F98EEC614C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FEE295-13B2-4BD0-95A6-4F98EEC614C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FEE295-13B2-4BD0-95A6-4F98EEC614C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FEE295-13B2-4BD0-95A6-4F98EEC614C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
