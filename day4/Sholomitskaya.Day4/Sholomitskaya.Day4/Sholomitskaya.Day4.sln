@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polynomial", "Polynomial\Polynomial.csproj", "{93B917DD-B992-4A8C-BD46-FFE89D5C1BF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsLookIt", "LetsLookIt\LetsLookIt.csproj", "{E310E3F0-CFF1-489B-A517-8A2CB6598FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolynomialTest", "PolynomialTest\PolynomialTest.csproj", "{D0CB8333-FC3F-49FB-BBD8-2C061375225F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93B917DD-B992-4A8C-BD46-FFE89D5C1BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B917DD-B992-4A8C-BD46-FFE89D5C1BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B917DD-B992-4A8C-BD46-FFE89D5C1BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B917DD-B992-4A8C-BD46-FFE89D5C1BF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E310E3F0-CFF1-489B-A517-8A2CB6598FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E310E3F0-CFF1-489B-A517-8A2CB6598FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E310E3F0-CFF1-489B-A517-8A2CB6598FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E310E3F0-CFF1-489B-A517-8A2CB6598FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CB8333-FC3F-49FB-BBD8-2C061375225F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CB8333-FC3F-49FB-BBD8-2C061375225F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CB8333-FC3F-49FB-BBD8-2C061375225F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CB8333-FC3F-49FB-BBD8-2C061375225F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
