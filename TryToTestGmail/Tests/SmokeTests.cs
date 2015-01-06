@@ -71,13 +71,13 @@ namespace Tests
             steps.LogoutGmail();
             steps.CleanCookie();
             steps.LoginGmail(THIRDUSERNAME, THIRDPASSWORD);
-            steps.ConfirmForwarding("forwarding-noreply");
+            steps.ConfirmAddToForwardList(SECONDUSERNAME);
             steps.CleanCookie();
             steps.CloseBrowser();
             steps.InitBrowser();
             steps.LoginGmail(SECONDUSERNAME, SECONDPASSWORD);
             steps.GoToForwardingMenu();
-
+            steps.SetUpForward();
         }
 
     }

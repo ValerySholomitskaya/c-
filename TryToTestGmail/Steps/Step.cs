@@ -97,11 +97,34 @@ namespace Steps
             Pages.MainGmailPage newLetter = new Pages.MainGmailPage(driver);
            return newLetter.NewLetter();
         }
-        public void ConfirmForwarding(string theme)
+
+        public void ConfirmAddToForwardList(String login)
         {
             Pages.MainGmailPage confirm = new Pages.MainGmailPage(driver);
-            confirm.GetLetter(theme);
+            confirm.OpensAndConfirm(login);
         }
+
+        public void SetUpForward()
+        {
+            Pages.SettingsPage setUp = new Pages.SettingsPage(driver);
+            try
+            {
+                setUp.EnableForward();
+            }
+            catch (Exception e)
+            {
+                logger.Info("Can't enable forward " +e.Message);
+            }
+            try
+            {
+                setUp.SaveSettings();
+            }
+            catch (Exception e)
+            {
+                logger.Info("Can't save data " + e.Message);
+            }
+        }
+
         public void GoToForwardingMenu()
         {
             Pages.SettingsPage settings = new Pages.SettingsPage(driver);

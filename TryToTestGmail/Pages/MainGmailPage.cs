@@ -41,6 +41,9 @@ namespace Pages
         [FindsBy(How = How.XPath, Using = "//a[@target='_blank']")]
         private IWebElement toConfirm;
 
+        [FindsBy(How = How.XPath, Using ="//div[@class='a3s']/a[4]")]
+        private IWebElement aConfirmAddToForwardListLink;
+
         private IWebDriver driver;
 
         #endregion
@@ -85,15 +88,14 @@ namespace Pages
             buttonForAllLetters.Click();
         }
 
-        public void ConfirmLetter(string somethingInTheLetter)
+        public void OpensAndConfirm(String subject)
         {
-
-            GetLetter(somethingInTheLetter);
-            Utils.WaitingElement waiting = new Utils.WaitingElement(driver);
-            waiting.WaitElement(newLetter);
-            newLetter.Click();
-            toConfirm.Click();
-
+            IWebElement element = driver.FindElement(By.XPath("//span[contains(text(), '" + subject + "')]"));
+            if (Utils.WaitingElement.IsWebElementPresent(driver, element))
+            {
+                element.Click();
+            }
+            aConfirmAddToForwardListLink.Click();
         }
 
         public bool NewLetter()

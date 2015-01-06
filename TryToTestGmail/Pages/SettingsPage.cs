@@ -39,6 +39,9 @@ namespace Pages
         [FindsBy(How = How.XPath, Using = "//button[@class='J-at1-auR']")]
         private IWebElement ConfirmForwarding;
 
+        [FindsBy(How = How.XPath, Using ="//div[@class='nH Tv1JD']//*/button[@guidedhelpid='save_changes_button']")]
+        private IWebElement buttonSaveChanges;
+
         private IWebDriver driver;
 
         #endregion
@@ -59,6 +62,32 @@ namespace Pages
         public void GoToForwardingMenu()
         {
             driver.Navigate().GoToUrl(BASE_URL);
+        }
+
+        public void EnableForward()
+        {
+            GoToForwardingMenu();
+            linkToAddAdressInForwardingMenu.Click();
+            IReadOnlyCollection<IWebElement> radioButton = driver.FindElements(By.XPath("//input[@name='sx_em']"));
+            bool state = false;
+            state = radioButton.ElementAt(0).Selected;
+            if (state)
+            {
+                radioButton.ElementAt(1).Click();
+            }
+            else
+            {
+                radioButton.ElementAt(0).Click();
+            }
+        }
+
+        public void SaveSettings()
+        {
+            GoToForwardingMenu();
+            linkToAddAdressInForwardingMenu.Click();
+            Utils.WaitingElement waiting = new Utils.WaitingElement(driver);
+            waiting.WaitElement(buttonSaveChanges);
+            buttonSaveChanges.Click();
         }
 
         public void AddForwardAdress(string address)

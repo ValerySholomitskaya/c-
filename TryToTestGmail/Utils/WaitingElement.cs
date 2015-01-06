@@ -23,17 +23,32 @@ namespace Utils
             PageFactory.InitElements(this.driver, this);
         }
 
-        public bool IsElementPresent(By by)
+        ////public bool IsElementPresent(By by)
+        ////{
+        ////    try
+        ////    {
+        ////        driver.FindElement(by);
+        ////        return true;
+        ////    }
+        ////    catch (NoSuchElementException)
+        ////    {
+        ////        return false;
+        ////    }
+        ////}
+        public static bool IsWebElementPresent(IWebDriver webdriver, IWebElement webelement)
         {
+            bool exists = false;
+            webdriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(20));
             try
             {
-                driver.FindElement(by);
-                return true;
+                webelement.GetType();
+                exists = true;
             }
-            catch (NoSuchElementException)
+            catch (NoSuchElementException e)
             {
-                return false;
             }
+            webdriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(20));
+            return exists;
         }
 
         public void WaitElement(IWebElement webElement)
